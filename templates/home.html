@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fluentify - Learn Languages in a fun way</title> 
+    <link rel="stylesheet" href="static/home.css">
 </head>
 <body>
-    <h1>Home</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lectus quis orci elementum viverra a id sapien. Etiam dolor metus, mattis id mi id, ornare euismod arcu. Vestibulum non blandit neque. Sed efficitur enim leo, eget sagittis nisl dignissim vitae. Nam ac sem et tellus tincidunt pretium. Nam nec vestibulum sapien. Vivamus lectus ligula, facilisis nec dolor at, tincidunt pulvinar sapien. Praesent et urna sem. Nullam a feugiat velit. Quisque non neque sed justo finibus posuere. Fusce velit nulla, mollis sit amet lectus quis, dignissim gravida massa. Duis et rhoncus orci. Aliquam magna odio, sollicitudin non efficitur ac, fringilla in tortor. Proin luctus, mi in iaculis sagittis, mi leo ornare mi, a posuere augue turpis sit amet lectus.</p>
-    <a href="{{url_for('login')}}">Login</a><br>
-    <a href="{{url_for('register')}}">Register</a>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">fluentify</a><img src="static/assets/tiger.png"  width="50px">
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/profile">PROFILE</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/login">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="home"></section>    
+    <div class="main-container">
+        <h1 class="welcome">WELCOME</h1>
+        <h2 class="choose">CHOOSE YOUR COURSE</h2>
+        <div class="course-grid">
+            <a href="/spanish"><div class="grid-items"><img src="static/assets/spain.png" alt="Spain Flag" width="100px" style="border-radius:30px ;"> <p>Spanish</p></div></a>
+            <a href="/french"><div class="grid-items"><img src="static/assets/france.png" alt="France Flag" width="100px"> <p>French</p></div></a>
+            <a href="/german"><div class="grid-items"><img src="static/assets/germany.png" alt="Germany Flag" width="100px"> <p>German</p></div></a>
+            <a href="/hindi"><div class="grid-items"><img src="static/assets/india.png" alt="India Flag" width="100px"> <p>Hindi</p></div></a>
+            <a href="/italian"><div class="grid-items"><img src="static/assets/italy.png" alt="Italy Flag" width="100px"> <p>Italian</p></div></a>
+            <a href="/japanese"><div class="grid-items"><img src="static/assets/japan.png" alt="Japan Flag" width="100px" style="border-radius:30px ;"> <p>Japanese</p></div></a>
+        </div>
+    </div>
+
+    <script>
+        let nav = document.querySelector("nav");
+            window.onscroll = function() {
+            if(document.documentElement.scrollTop > 20){
+                nav.classList.add("sticky");
+            }else {
+                nav.classList.remove("sticky");
+            }
+            }
+    </script>
 </body>
 </html>
