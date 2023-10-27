@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+</head>
+<body>
+  <div class="logo">fluentify</div>
+
+  <div class="main-contianer">
+    <h1>LOGIN</h1>
+    <form action="#" method="post">
+      <input type="name" name="name" id="name" placeholder="Name"><br>
+      <input type="password" name="password" id="password" placeholder="Password"><br>
+      <input class="submit" type="submit" value="Submit">
+    </form>
+
+    <p>Don't have an account? <a href="{{url_for('register')}}">Register</a></p>
+    <!-- <p style="display: block;" class="userNotFound">NO USER FOUND</p>
+    <p style="display: none;" class="wrongPassword">INCORRECT PASSOWRD</p>
+  </div>
+
+  <script>
+    // if ('{{message}}' == "nameNotFound"){
+    //     document.getElementsByClassName("userNotFound").style.display = 'block';
+    // }
+    document.getElementsByClassName("userNotFound").innerText = "{{message}}"
+</script> -->
+</body>
+</html>

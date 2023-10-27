@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+</head>
+<body>
+  <div class="logo">fluentify</div>
+
+  <div class="main-contianer">
+    <h1>CREATE A PROFILE</h1>
+    <form action="#" method="post">
+      <input type="text" name="name" id="name" placeholder="Name"><br>
+      <input type="email" name="email" id="email" placeholder="Email"><br>
+      <input type="password" name="password" id="passowrd" placeholder="Password"><br>
+      <input class="submit" type="submit" value="Submit">
+    </form>
+
+    <p>Already have an account? <a href="{{url_for('login')}}">Login</a></p>
+  </div>
+</body>
+</html>
