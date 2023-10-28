@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="/static/leaderboard.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">fluentify</a><img src="/static/assets/tiger.png"  width="50px">
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/login">LOGIN</a></li>
+                <li><a href="/register">REGISTER</a></li>
+                <li><a href="/profile">PROFILE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="home"></section>
+
+    <div class="main-container">
+        <div class="title-item">LEADERBOARD</div>
+        <div class="items"><span>1.</span> <span>{{sum[0][1]}}</span>  <span>{{sum[0][0]}}</span></div>
+        <div class="items"><span>2.</span> <span>{{sum[1][1]}}</span>  <span>{{sum[1][0]}}</span></div>
+        <div class="items"><span>3.</span> <span>{{sum[2][1]}}</span>  <span>{{sum[2][0]}}</span></div>
+        <div class="items"><span>4.</span> <span>{{sum[3][1]}}</span>  <span>{{sum[3][0]}}</span></div>
+        <div class="items"><span>5.</span> <span>{{sum[4][1]}}</span>  <span>{{sum[4][0]}}</span></div>
+    </div>
+</body>
+</html>

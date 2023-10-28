@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>fluentify - Learn Languages in a fun way</title> 
+    <title>Home Page</title>
     <link rel="stylesheet" href="static/home.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+<body bgcolor="azure">
     <nav>
         <div class="nav-content">
             <div class="logo">
-                <a href="#">fluentify</a><img src="static/assets/tiger.png"  width="50px">
+                <a href="#">fluentify</a><img src="static/assets/tiger.png" width="50px">
             </div>
             <ul class="nav-links">
                 <li><a href="/">HOME</a></li>
-                <li><a href="/profile">PROFILE</a></li>
-                <li><a href="/about">ABOUT</a></li>
                 <li><a href="/login">LOGIN</a></li>
+                <li><a href="/register">REGISTER</a></li>
+                <li><a href="/profile">PROFILE</a></li>
             </ul>
         </div>
     </nav>
-    <section class="home"></section>    
+    <section class="home"></section>
+
     <div class="main-container">
         <h1 class="welcome">WELCOME</h1>
         <h2 class="choose">CHOOSE YOUR COURSE</h2>
         <div class="course-grid">
-            <a href="/spanish"><div class="grid-items"><img src="static/assets/spain.png" alt="Spain Flag" width="100px" style="border-radius:30px ;"> <p>Spanish</p></div></a>
-            <a href="/french"><div class="grid-items"><img src="static/assets/france.png" alt="France Flag" width="100px"> <p>French</p></div></a>
-            <a href="/german"><div class="grid-items"><img src="static/assets/germany.png" alt="Germany Flag" width="100px"> <p>German</p></div></a>
-            <a href="/hindi"><div class="grid-items"><img src="static/assets/india.png" alt="India Flag" width="100px"> <p>Hindi</p></div></a>
-            <a href="/italian"><div class="grid-items"><img src="static/assets/italy.png" alt="Italy Flag" width="100px"> <p>Italian</p></div></a>
-            <a href="/japanese"><div class="grid-items"><img src="static/assets/japan.png" alt="Japan Flag" width="100px" style="border-radius:30px ;"> <p>Japanese</p></div></a>
+            <a href="/spanish"><div class="grid-items"><img src="static/assets/spain.png" alt="" width="100px" style="border-radius:30px ;"> <p>Spanish</p></div></a>
+            <a href="/french"><div class="grid-items"><img src="static/assets/france.png" alt="" width="100px"> <p>French</p></div></a>
+            <a href="/german"><div class="grid-items"><img src="static/assets/germany.png" alt="" width="100px"> <p>German</p></div></a>
+            <!-- <a href="#"><div class="grid-items"><img src="static/assets/india.png" alt="" width="100px"> <p>Hindi</p></div></a> -->
+        </div>
+        <div class="course-grid2">
+            <a href="/italian"><div class="grid-items"><img src="static/assets/italy.png" alt="" width="100px"> <p>Italian</p></div></a>
+            <a href="/japanese"><div class="grid-items"><img src="static/assets/japan.png" alt="" width="100px" style="border-radius:30px ;"> <p>Japanese</p></div></a>
         </div>
     </div>
 
+    <button type="submit" class="btn" id="btno" onclick="openTranslator()">Translator</button>
+    <div class="container" id="container">
+        <div class="wrapper">
+            <div class="text-input">
+            <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+            <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i id="from" class="fas fa-copy"></i>
+                    </div>
+                    <select></select>
+                </li>
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                <li class="row to">
+                    <select></select>
+                    <div class="icons">
+                        <i id="to" class="fas fa-copy"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button id="translate-btn">Translate Text</button>
+        <button type="submit" class="btn" id="btnc" onclick="closeTranslator()">Exit Translator</button>
+    </div>
+
+    <script src="static/countries.js"></script>
+    <script src="static/translator.js"></script>
     <script>
         let nav = document.querySelector("nav");
             window.onscroll = function() {

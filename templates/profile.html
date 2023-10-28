@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="static/profile.css">
+    <link rel="stylesheet" href="/static/profile.css">
 </head>
 <body>
-    <div class="nav">
-        <div class="logo">fluentify</div>
-        <div class="home">HOME</div>
-        <div class="progress">PROGRESS</div>
-        <div class="proflie">PROFILE</div>
-        <div class="aboutus">ABOUT US</div>
-    </div>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">fluentify</a><img src="/static/assets/tiger.png"  width="50px">
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/login">LOGIN</a></li>
+                <li><a href="/register">REGISTER</a></li>
+                <li><a href="/profile">PROFILE</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="profile">
-        <div class="heading">PROFILE</div>
-        <div class="profile-image"><img src="/static/assets/profile.png" alt="PFP"></div>
-        <div class="username"><p>Username: {{name}}</p></div>
-        <div class="email"><p>Email: {{email}}</p></div>
-        <div class="languages"><p>Languages: Hindi, Tamil, Urdu, Chemistry, Math</p></div>
-        <div class="logout"><button>LOGOUT</button></div>
+        <div class="heading"><h1>PROFILE</h1></div>
+        <div class="profile-image"><img style="opacity: 1;" src="/static/assets/profile.png" alt="PFP" width="250px"></div>
+        <div class="username"><p><span style="color: #507cf5;">Username:</span> {{name}}</p></div>
+        <div class="email"><p><span style="color: #507cf5;">Email:</span> {{email}}</p></div>
+        <div class="languages"><p><span style="color: #507cf5;">Languages:</span> Hindi, Tamil, Urdu, Chemistry, Math</p></div>
+        <div class="logout"><button><a href="/logout">LOGOUT</a></button></div>
     </div>
 </body>
 </html>
