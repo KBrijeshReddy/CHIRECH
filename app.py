@@ -31,7 +31,7 @@ def questions():
         name = session["name"]
         test = dict(request.get_json())
         try:
-            db.users.update_one({"name": name}, {"$set": {"tests": {test["language"]: 2 * test["correct"] - test["wrong"]}}})
+            db.users.update_one({"name": name}, {"$set": {"tests."+test["language"]: 2 * test["correct"] - test["wrong"]}})
         except KeyError:
             pass
     return render_template("questions.html", language=language)
