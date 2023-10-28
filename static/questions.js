@@ -142,50 +142,50 @@ questionsDict = {
         }
     ],
 
-    "italian": [
+    english: [
         {
-            question: "What is the correct translation for “yellow”?",
+            question: "I came ___ America.",
             answers: [
-                {text: "giallo" ,correct: true},
-                {text: "blu", correct: false},
-                {text: "luminoso", correct: false},
-                {text: "marrone scuro", correct: false}
+                {text: "from" ,correct: true},
+                {text: "at", correct: false},
+                {text: "in", correct: false},
+                {text: "out", correct: false}
             ]
         },
         {
-            question: "How do you say “how is it going?” in Italian?",
+            question: "She is__ home.",
             answers: [
-                {text: "Di dove sei?", correct: false},
-                {text: "Espressioni comuni?", correct: false},
-                {text: "Cosi?", correct: false},
-                {text: "Come va?", correct: true}
+                {text: "in", correct: false},
+                {text: "on", correct: false},
+                {text: "from", correct: false},
+                {text: "at", correct: true}
             ]
         },
         {
-            question: "How do you say 'Apple' in Iitalian?",
+            question: " She eats___ apple.",
             answers: [
-                {text: "birra " ,correct: false},
-                {text: "sedano", correct: false},
-                {text: "mais", correct: false},
-                {text: "mela", correct: true}
+                {text: "a " ,correct: false},
+                {text: "an", correct: false},
+                {text: "two", correct: false},
+                {text: "they", correct: true}
             ]
         },
         {
-            question: "How do you say “Windy” in Italian?",
+            question: "These __ books.",
             answers: [
-                {text: "albero", correct: false},
-                {text: "Ventosa", correct: true},
-                {text: "freddo", correct: false},
-                {text: "fiore", correct: false}
+                {text: "is", correct: false},
+                {text: "are", correct: true},
+                {text: "is a", correct: false},
+                {text: "am", correct: false}
             ]
         },
         {
-            question: "How do you say “6th” in Italian?",
+            question: " How long____ learning English?",
             answers: [
-                {text: "otto" ,correct: true},
-                {text: "sesto", correct: false},
-                {text: "quaranta", correct: false},
-                {text: "cinquecento", correct: false}
+                {text: "have you been" ,correct: true},
+                {text: "are you", correct: false},
+                {text: "did you", correct: false},
+                {text: "had you", correct: false}
             ]
         }
     ],

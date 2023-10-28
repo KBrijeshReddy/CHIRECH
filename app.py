@@ -95,10 +95,10 @@ def german():
     language = "german"
     return redirect("/questions")
 
-@app.route("/italian")
+@app.route("/english")
 def italian():
     global language
-    language = "italian"
+    language = "english"
     return redirect("/questions")
 
 @app.route("/japanese")

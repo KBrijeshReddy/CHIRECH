@@ -107,7 +107,7 @@
         function showScore(){
             resetState();
             document.getElementById("heading").innerText = "Congratulations!";
-            questionElement.innerHTML = 'You scored ' + String(score) + ' out of ' + String(questions.length) + '!\n' + String(JSON.stringify(test));
+            questionElement.innerHTML = 'You scored ' + String(score) + ' out of ' + String(questions.length);
             nextButton.innerHTML = "Home";
             nextButton.style.display = "block";
             postJSON(test);
