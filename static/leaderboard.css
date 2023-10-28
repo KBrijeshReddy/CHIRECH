@@ -7,11 +7,6 @@
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
 }
-
-body{
-    background-color: azure;
-}
-
 nav{
   position: fixed;
   top: 0;
@@ -67,7 +62,7 @@ nav.sticky .logo a{
   color: #0E2431;
 }
 .home{
-  height: 20vh;
+  height: vh;
   width: 100%;
 }
 h2{
@@ -86,7 +81,7 @@ h2{
   align-items: center;  
 }
 
-.profile{
+.main-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,35 +91,24 @@ h2{
     text-align: center;
 }
 
-.heading,  .profile-image, .username, .email, .languages, .logout{
-    margin: 10px;
-}
-
-h1{
-    font-size: 2.5rem;
-    padding: 30px;
-    color: #507cf5;
-}
-
-.username, .email, .languages{
-    font-family: 'ubuntu';
-    padding: 10px;
-    font-size: 1.2rem;
-    color: #f2765a;
-}
-
-button{
-    padding: 10px;
-    width: 100px;
-    font-family: 'ubuntu';
-    background: none;
-    color: #507cf5;
-    border: solid 1px #f2765a;
-    border-radius: 3px;
-}
-
-button:hover{
+.items{
+    width: 70vh;
+    padding: 15px;
     background-color: #f2765a;
-    transition-duration: 0.3s;
-    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
+
+.title-item{
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #4070f4;
+    
+}
+
+ 
+

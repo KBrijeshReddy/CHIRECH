@@ -1,27 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Mooli&family=Mukta:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.4s ease;
+  }
+  nav.sticky{
+    padding: 15px 20px;
+    background: #4070f4;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  nav .nav-content{
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: #4070f4;
+  }
+  nav.sticky .logo a{
+    color: #fff;
+  }
+  .nav-content .nav-links{
+    display: flex;
+  }
+  .nav-content .nav-links li{
+    list-style: none;
+    margin: 0 8px;
+  }
+   .nav-links li a{
+    text-decoration: none;
+    color: #0E2431;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+  }
+   .nav-links li a:hover{
+     color: #4070f4;
+   }
+   nav.sticky .nav-links li a{
+     color: #fff;
+     transition: all 0.4s ease;
+  }
+   nav.sticky .nav-links li a:hover{
+    color: #0E2431;
+  }
+  .home{
+    height: 20vh;
+    width: 100%;
+  }
 
-.logo{
-    margin: 20px;
-    font-family: 'mooli';
-    font-size: 1.5rem;
-    padding: 10px;
-    color: #4F4A45
-}
+  .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+  }
 
-.main-contianer{
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
-    margin-top: 10%;
-}
+    
+  }
 
-form{
-    margin-left: 290px;
-}
-.submit{
-    margin-left: 40px;
-}
+  .items{
+    margin: 10px;
+  }
+
+  h1{
+    font-size: 2.5rem;
+    padding: 30px;
+    color: #507cf5;
+  }
+
+  #name, #password, #email{
+    padding: 10px;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  #submit{
+    padding: 10px;
+    width: 100px;
+    font-family: 'ubuntu';
+  }
+
+  #userNotFound, #wrongPassword, #nameExists{
+    font-size: .8rem;
+    background-color: #f2765a;
+    padding: 7px;
+    border-radius: 5px;
+    color: #fff;
+  }
