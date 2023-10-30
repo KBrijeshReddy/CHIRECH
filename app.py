@@ -23,6 +23,7 @@ def leaderboard():
         print(summ)
     except Exception:
         pass
+    summ += [["", ""], ["", ""], ["", ""], ["", ""], ["", ""]]
     return render_template("leaderboard.html", sum=summ)
 
 @app.route("/questions", methods=["POST", "GET"])
