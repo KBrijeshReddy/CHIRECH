@@ -1,6 +1,9 @@
 Team name: Lux Incognito
+
 Problem Statement -  "Develop an interactive, gamified language learning platform for education in order to effectively overcome language barriers."
+
 School Name - Arbor International School
+
 Theme Name: Societal Impact(Educational Accessibility)
 
 
